@@ -1,16 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/energy/Navbar";
+import HeroSection from "@/components/energy/HeroSection";
+import ProblemSection from "@/components/energy/ProblemSection";
+import SolutionFlow from "@/components/energy/SolutionFlow";
+import LiveDashboard from "@/components/energy/LiveDashboard";
+import ArchitectureSection from "@/components/energy/ArchitectureSection";
+import AutomationSection from "@/components/energy/AutomationSection";
+import MetricsSection from "@/components/energy/MetricsSection";
+import DifferentiationSection from "@/components/energy/DifferentiationSection";
+import Footer from "@/components/energy/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
-  return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+const Index = () => (
+  <div className="min-h-screen bg-background text-foreground">
+    <Navbar />
+    <HeroSection />
+    <ProblemSection />
+    <SolutionFlow />
+    <LiveDashboard />
+    <div id="architecture">
+      <ArchitectureSection />
     </div>
-  );
-};
-
-const Index = PlaceholderIndex;
+    <div id="automation">
+      <AutomationSection />
+    </div>
+    <div id="metrics">
+      <MetricsSection />
+    </div>
+    <DifferentiationSection />
+    <Footer />
+  </div>
+);
 
 export default Index;
